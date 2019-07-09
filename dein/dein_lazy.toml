@@ -1,0 +1,11 @@
+# ####################################
+# markdown
+# ####################################
+
+[[plugins]]
+repo = 'kannokanno/previm'
+on_ft = ['markdown']
+hook_add = '''
+  source ~/.config/nvim/plugins/previm
+'''
+
