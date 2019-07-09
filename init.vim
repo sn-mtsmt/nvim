@@ -38,7 +38,7 @@ endif
 
 
 " ---------------------------------
-" My Vim setting
+" default setting
 " ---------------------------------
 syntax on
 colorscheme default 
@@ -52,4 +52,19 @@ set cmdheight=2
 set laststatus=2
 set wildmenu
 set history=5000
+set inccommand=split
+
+" ---------------------------------
+" Insert mode key bind
+" ---------------------------------
+inoremap <C-j> <Esc>
+
+" --------------------------------
+" Normal mode key bind
+" ---------------------------------
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 
