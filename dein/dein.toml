@@ -22,17 +22,6 @@ hook_add = '''
   source ~/.config/nvim/plugins/nerdtree.vim
 '''
 
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugins/deoplete.nvim
-'''
-
-[[plugins]]
-repo = 'Shougo/neosnippet.vim'
-hook_add = '''
-  source ~/.config/nvim/plugins/neosnippet.vim
-'''
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'

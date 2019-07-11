@@ -1,11 +1,32 @@
 # ####################################
+# lazy plugins
+# ####################################
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_source = '''
+  source ~/.config/nvim/plugins/deoplete.nvim
+'''
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+hook_source = '''
+  source ~/.config/nvim/plugins/neosnippet.vim
+'''
+on_i = 1
+on_ft = ['snippet']
+depends = ['neosnippet-snippets']
+
+
+# ####################################
 # markdown
 # ####################################
 
 [[plugins]]
 repo = 'kannokanno/previm'
-on_ft = ['markdown']
 hook_add = '''
   source ~/.config/nvim/plugins/previm
 '''
+on_ft = ['markdown']
 
