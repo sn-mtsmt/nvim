@@ -15,6 +15,7 @@ if &runtimepath !~# '/dein.vim'
 	execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':P')
 endif
 
+" load toml file
 if dein#load_state(s:dein_dir)
 	call dein#begin(s:dein_dir)
 
@@ -32,6 +33,7 @@ if dein#load_state(s:dein_dir)
 	call dein#save_state()
 endif
 
+" download plugins 
 if dein#check_install()
 	call dein#install()
 endif
@@ -40,29 +42,41 @@ endif
 " ---------------------------------
 " default setting
 " ---------------------------------
+" view
 syntax on
 colorscheme default 
-
+set title
 set number
-set noswapfile
-set autoread
-set shiftwidth=4
+
+" tab & indent
+set expandtab
 set tabstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
+set smarttab
+
+" others
+set wildmenu
+set nowrap
+set noswapfile
+set nobackup
+set nowritebackup
+set autoread
 set cmdheight=2
 set laststatus=2
-set wildmenu
 set history=5000
 set inccommand=split
-set nowrap
+set hidden
+
 
 " ---------------------------------
-" Insert mode key bind
+" key mapping
 " ---------------------------------
+" Insert mode
 inoremap <C-j> <Esc>
 
-" --------------------------------
-" Normal mode key bind
-" ---------------------------------
+" Normal mode
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k

@@ -9,27 +9,34 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'jistr/vim-nerdtree-tabs'
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  source ~/.config/nvim/plugins/nerdtree.vim
+'''
 
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
 
 # ####################################
 # developper plugins 
 # ####################################
 
 [[plugins]]
-repo = 'scrooloose/nerdtree'
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = '0'
+if = '''executable('node') && executable('yarn')'''
+build = './install.sh nightly'
+hook_source = 'call coil398#init#coc#hook_source()'
 hook_add = '''
-  source ~/.config/nvim/plugins/nerdtree.vim
+  source ~/.config/nvim/plugins/coc.nvim
 '''
-
-
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-
 
 # ####################################
 # Utility
 # ####################################
+
 [[plugins]]
 repo = 'tell-k/vim-browsereload-mac'
 
