@@ -62,7 +62,7 @@ set noswapfile
 set nobackup
 set nowritebackup
 set autoread
-set cmdheight=2
+set cmdheight=4
 set laststatus=2
 set history=5000
 set inccommand=split

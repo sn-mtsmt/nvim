@@ -53,6 +53,11 @@ repo = 'prabirshrestha/asyncomplete-lsp.vim'
 # ####################################
 # Utility
 # ####################################
+[[plugins]]
+repo = "airblade/vim-gitgutter"
+
+[[plugins]]
+repo = "tpope/vim-fugitive"
 
 [[plugins]]
 repo = 'tell-k/vim-browsereload-mac'
