@@ -38,7 +38,6 @@ if dein#check_install()
 	call dein#install()
 endif
 
-
 " ---------------------------------
 " default setting
 " ---------------------------------
@@ -50,8 +49,8 @@ set number
 
 " tab & indent
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set autoindent
 set smartindent
 set smarttab
@@ -68,7 +67,7 @@ set laststatus=2
 set history=5000
 set inccommand=split
 set hidden
-
+set clipboard+=unnamed
 
 " ---------------------------------
 " key mapping
