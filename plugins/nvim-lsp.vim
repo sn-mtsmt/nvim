@@ -1,4 +1,3 @@
-
 autocmd Filetype typescript setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>

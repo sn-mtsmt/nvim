@@ -43,9 +43,16 @@ hook_add = '''
 
 [[plugins]]
 repo = 'mattn/vim-lsp-settings'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-lsp-settings.vim
+'''
+merged = 0
 
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete.vim'
+hook_add = '''
+  source ~/.config/nvim/plugins/asyncomplete.vim
+'''
 
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete-lsp.vim'
@@ -54,6 +61,12 @@ repo = 'prabirshrestha/asyncomplete-lsp.vim'
 # Utility
 # ####################################
 [[plugins]]
+repo = "Shougo/denite.nvim"
+hook_add = '''
+  source ~/.config/nvim/plugins/denite.vim
+'''
+
+[[plugins]]
 repo = "airblade/vim-gitgutter"
 
 [[plugins]]
@@ -61,4 +74,21 @@ repo = "tpope/vim-fugitive"
 
 [[plugins]]
 repo = 'tell-k/vim-browsereload-mac'
+
+# ####################################
+# language
+# ####################################
+[[plugins]]
+repo = 'posva/vim-vue'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-vue.vim
+'''
+
+[[plugins]]
+repo = 'prettier/vim-prettier'
+build = 'npm install'
+on_ft = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-prettier.vim
+'''
 

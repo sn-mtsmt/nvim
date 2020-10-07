@@ -62,7 +62,7 @@ set noswapfile
 set nobackup
 set nowritebackup
 set autoread
-set cmdheight=4
+set cmdheight=3
 set laststatus=2
 set history=5000
 set inccommand=split
@@ -83,3 +83,4 @@ nnoremap <C-l> <C-w>l
 
 " Terminal mode
 tnoremap <silent> <ESC> <C-\><C-n>
+
