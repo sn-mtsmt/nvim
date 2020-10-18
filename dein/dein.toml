@@ -23,9 +23,9 @@ hook_add = '''
   source ~/.config/nvim/plugins/winresizer.nvim
 '''
 
-# ####################################
+####################################
 # developper plugins 
-# ####################################
+####################################
 # [[plugins]]
 # repo = 'neovim/nvim-lsp'
 # hook_add = '''
@@ -60,11 +60,11 @@ repo = 'prabirshrestha/asyncomplete-lsp.vim'
 # ####################################
 # Utility
 # ####################################
-[[plugins]]
-repo = "Shougo/denite.nvim"
-hook_add = '''
-  source ~/.config/nvim/plugins/denite.vim
-'''
+# [[plugins]]
+# repo = "Shougo/denite.nvim"
+# hook_add = '''
+#   source ~/.config/nvim/plugins/denite.vim
+# '''
 
 [[plugins]]
 repo = "airblade/vim-gitgutter"
