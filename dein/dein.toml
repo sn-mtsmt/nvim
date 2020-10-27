@@ -23,6 +23,12 @@ hook_add = '''
   source ~/.config/nvim/plugins/winresizer.nvim
 '''
 
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
+hook_add = '''
+  source ~/.config/nvim/plugins/ctrlp.vim
+'''
+
 ####################################
 # developper plugins 
 ####################################
@@ -74,6 +80,10 @@ repo = "tpope/vim-fugitive"
 
 [[plugins]]
 repo = 'tell-k/vim-browsereload-mac'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
 
 # ####################################
 # language
