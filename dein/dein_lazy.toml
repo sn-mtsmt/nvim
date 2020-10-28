@@ -9,11 +9,11 @@
 #   source ~/.config/nvim/plugins/vlime.vim
 # '''
 
- [[plugins]]
-repo = 'kovisof/slime'
-on_ft = 'lisp'
-hook_add = '''
-  source ~/.config/nvim/plugins/slime.vim
- '''
+# [[plugins]]
+# repo = 'kovisof/slime'
+# on_ft = 'lisp'
+# hook_add = '''
+#   source ~/.config/nvim/plugins/slime.vim
+# '''
 
 

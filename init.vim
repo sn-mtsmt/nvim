@@ -1,4 +1,4 @@
-filetype plugin on
+
 
 " ---------------------------------
 " install dein and other plugins
@@ -83,4 +83,11 @@ nnoremap <C-l> <C-w>l
 
 " Terminal mode
 tnoremap <silent> <ESC> <C-\><C-n>
+
+" Quickfix
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.log,*/node_modules/*
+nnoremap H :<C-u>cfirst<CR> " 最初へ
+nnoremap J :cprevious<CR>   " 前へ
+nnoremap K :cnext<CR>       " 次へ
+nnoremap L :<C-u>clast<CR>  " 最後へ
 
