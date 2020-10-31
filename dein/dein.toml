@@ -1,7 +1,6 @@
 # ####################################
 # vim display
 # ####################################
-
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
