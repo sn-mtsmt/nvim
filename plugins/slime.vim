@@ -16,9 +16,7 @@ let g:slimv_impl = 'sbcl'
 
 " ====================================================================
 " swank起動コマンド設定
-
 " --------------------------------------------------------------------
-" linuxのとき
 
 " --------------------------------------------------------------------
 " macOSのとき
@@ -38,14 +36,14 @@ autocmd BufNewFile,BufRead *.asd set filetype=lisp
 
 " 現在のファイルだけを対象としてタグファイルを作成
 function! s:generate_lisp_tags()
-  let g:slimv_ctags='ctags -a -f '.$HOME.'/.tags/lisp.tags '.expand('%:p').' --language-force=Lisp'
+  let g:slimv_ctags='ctags -a -f ~/.config/nvim/.tags/lisp.tags '.expand('%:p').' --language-force=Lisp'
   call SlimvGenerateTags()
 endfunction
 command! -nargs=0 GenerateLispTags call <SID>generate_lisp_tags()
 
 " 再帰的にタグファイルを作成
 function! s:generate_lisp_tags_recursive()
-  let g:slimv_ctags='ctags -a -f '.$HOME.'/.tags/lisp.tags -R '.expand('%:p:h').' --language-force=Lisp'
+  let g:slimv_ctags='ctags -a -f ~/.config/nvim/.tags/lisp.tags -R '.expand('%:p:h').' --language-force=Lisp'
   call SlimvGenerateTags()
 endfunction
 command! -nargs=0 GenerateLispTagsRecursive call <SID>generate_lisp_tags_recursive()
