@@ -1,11 +1,10 @@
 # ####################################
-# lazy plugins
+# plugin runner
 # ####################################
 [[plugins]]
-repo = 'kovisoft/slimv'
+repo = 'vlime/vlime'
 on_ft = 'lisp'
 hook_add = '''
-  source ~/.config/nvim/plugins/slime.vim
+  source ~/.config/nvim/plugins/vlime.vim
 '''
-
 

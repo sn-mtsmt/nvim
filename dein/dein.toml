@@ -65,12 +65,6 @@ repo = 'prabirshrestha/asyncomplete-lsp.vim'
 # ####################################
 # Utility
 # ####################################
-# [[plugins]]
-# repo = "Shougo/denite.nvim"
-# hook_add = '''
-#   source ~/.config/nvim/plugins/denite.vim
-# '''
-
 [[plugins]]
 repo = "airblade/vim-gitgutter"
 
@@ -79,10 +73,6 @@ repo = "tpope/vim-fugitive"
 
 [[plugins]]
 repo = 'tell-k/vim-browsereload-mac'
-
-[[plugins]]
-repo = 'junegunn/fzf.vim'
-
 
 # ####################################
 # language
@@ -100,4 +90,14 @@ on_ft = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
 hook_add = '''
   source ~/.config/nvim/plugins/vim-prettier.vim
 '''
+
+# ####################################
+# plugin runner
+# ####################################
+[[plugins]]
+repo = 'adolenc/cl-neovim'
+hook_add = '''
+  source ~/.config/nvim/plugins/cl-neovim.nvim
+'''
+
 

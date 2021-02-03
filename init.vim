@@ -83,7 +83,8 @@ nnoremap <C-l> <C-w>l
 tnoremap <silent> <ESC> <C-\><C-n>
 
 " Quickfix
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.log,*/node_modules/*
+autocmd QuickFixCmdPost *grep* cwindow
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.log,*/node_modules/*,*.git,*.svn
 nnoremap H :<C-u>cfirst<CR> " 最初へ
 nnoremap J :cprevious<CR>   " 前へ
 nnoremap K :cnext<CR>       " 次へ

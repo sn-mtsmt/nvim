@@ -1,0 +1,1 @@
+let g:lisp_host_quicklisp_setup='~/quicklisp/setup.lisp'
